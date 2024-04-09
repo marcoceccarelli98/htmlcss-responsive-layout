@@ -36,20 +36,6 @@ header {
  ----------*/
 
 /* APPLICATION */
-.application .content-text {
-    height: 60%;
-    width: 90%;
-    background-color: red;
-    margin: 0 auto;
-}
-
-.application .content-img {
-    height: 30%;
-    width: 90%;
-    background-color: green;
-    margin: 0 auto;
-}
-
 .application .col {
     width: 100%;
 }
@@ -57,8 +43,8 @@ header {
 .application .content {
     height: 400px;
     background-color: #B5DDFF;
-    margin: 0 20px 30px 20px;
     padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 .application .content-big {
@@ -66,13 +52,90 @@ header {
     margin-top: 60px;
 }
 
+.application .content-text {
+    height: 60%;
+    width: 100%;
+    background-color: red;
+}
+
+.application .content-img {
+    height: 30%;
+    width: 100%;
+    background-color: green;
+}
+
 /* PLANNING */
 .planning {
     background-color: #9792E4;
+    padding: 50px 0;
 }
 
+.planning .row {
+    flex-direction: column;
+}
 
+.planning .content-right {
+    background-color: white;
+}
 
+.planning .content-text {
+    height: 300px;
+    width: 100%;
+    background-color: red;
+}
+
+.planning .content-img {
+    height: 300px;
+    width: 100%;
+    background-color: green;
+}
+
+.planning .content-right {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* PARTNERS */
+.partners {
+    padding: 50px 0;
+}
+
+.partners .content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #9792E4;
+}
+
+.partners .content-text {
+    height: 300px;
+    width: 100%;
+    background-color: red;
+}
+
+.partners .content-img {
+    height: 300px;
+    width: 100%;
+    background-color: green;
+}
+
+/* WHY US */
+.why-us {
+    padding: 50px 0;
+    background-color: #9792E4;
+}
+
+.why-us .col {
+    width: 100%;
+}
+
+.why-us .content {
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+}
 
 
 /*----------
@@ -108,10 +171,29 @@ header {
         margin-top: 0px;
     }
 
+    /* PLANNING */
+
+    /* PARTNERS */
+    .partners .content {
+        flex-direction: row;
+    }
+
+    /* WHY US */
+    .why-us .col {
+        margin: 0 10px;
+        width: calc(50% - 20px);
+    }
 }
 
 /*--- DESKTOP ---*/
 @media screen and (min-width: 768px) {
+
+    /*----------
+       LAYOUT 
+    ----------*/
+    .container {
+        width: 70vw;
+    }
 
     /*----------
        HEADER 
@@ -155,5 +237,20 @@ header {
 
     .application .content-img:last-child {
         background-color: violet;
+    }
+
+    /* PLANNING */
+    .planning .row {
+        flex-direction: row;
+    }
+
+    .planning .col {
+        margin: 0 20px;
+    }
+
+    /* WHY US */
+    .why-us .col {
+        margin: 0 10px;
+        width: calc(100%/3 - 20px);
     }
 }
