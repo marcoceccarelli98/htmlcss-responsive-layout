@@ -27,26 +27,133 @@ header {
     padding: 0 2rem;
 }
 
-.menu-desktop {
+.only-desktop {
     display: none;
 }
+
+/*----------
+    MAIN
+ ----------*/
+
+/* APPLICATION */
+.application .content-text {
+    height: 60%;
+    width: 90%;
+    background-color: red;
+    margin: 0 auto;
+}
+
+.application .content-img {
+    height: 30%;
+    width: 90%;
+    background-color: green;
+    margin: 0 auto;
+}
+
+.application .col {
+    width: 100%;
+}
+
+.application .content {
+    height: 400px;
+    background-color: #B5DDFF;
+    margin: 0 20px 30px 20px;
+    padding-top: 20px;
+}
+
+.application .content-big {
+    height: 800px;
+    margin-top: 60px;
+}
+
+/* PLANNING */
+.planning {
+    background-color: #9792E4;
+}
+
+
+
 
 
 /*----------
  RESPONSIVE
  ----------*/
+/*--- TABLET ---*/
 @media screen and (min-width: 480px) {
+    /*----------
+        MAIN
+    ----------*/
+
+    /* APPLICATION */
+
+    .application {
+        margin-top: 50px;
+    }
+
+    .application .col {
+        width: calc(100%/3);
+    }
+
+    .application .col:first-child {
+        width: calc(100%/3*2);
+    }
+
+    .application .content {
+        height: 300px;
+        margin: 0 10px 30px 10px;
+    }
+
+    .application .content-big {
+        height: 300px;
+        margin-top: 0px;
+    }
+
+}
+
+/*--- DESKTOP ---*/
+@media screen and (min-width: 768px) {
 
     /*----------
        HEADER 
     ----------*/
-    .menu-mobile {
+    .only-mobile {
         display: none;
     }
 
-    .menu-desktop {
+    .only-desktop {
         display: block;
     }
 
+    /*----------
+        MAIN
+    ----------*/
 
+    /* APPLICATION */
+
+    .application {
+        margin-top: 50px;
+    }
+
+    .application .content-big {
+        display: flex;
+    }
+
+    .application .content-left,
+    .application .content-right {
+        width: 50%;
+    }
+
+    .application .content-text {
+        height: 60%;
+        margin: 0 auto;
+    }
+
+    .application .content-img {
+        height: 30%;
+        margin: 0 auto;
+    }
+
+    .application .content-img:last-child {
+        background-color: violet;
+    }
 }
