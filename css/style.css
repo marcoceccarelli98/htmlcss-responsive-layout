@@ -10,3 +10,43 @@
 /*----------
    COMMON 
  ----------*/
+
+
+
+/*----------
+   HEADER 
+ ----------*/
+header {
+    padding: 2rem;
+    background-color: #0084FD;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+
+/*----------
+ RESPONSIVE
+ ----------*/
+@media screen and (min-width: 480px) {
+
+    /*----------
+       HEADER 
+    ----------*/
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: block;
+    }
+
+
+}
