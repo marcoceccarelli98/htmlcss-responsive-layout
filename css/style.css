@@ -137,6 +137,63 @@ header {
     margin-bottom: 20px;
 }
 
+/* ABOUT US */
+.about-us {
+    padding: 50px 0;
+}
+
+.about-us .row {
+    flex-direction: column;
+}
+
+.about-us .col {
+    width: 100%;
+}
+
+.about-us .content-text {
+    height: 300px;
+    width: 100%;
+    background-color: red;
+}
+
+.about-us .content-img {
+    height: 100px;
+    width: 100%;
+    background-color: green;
+}
+
+/* GET STARTED */
+.get-started {
+    background-color: #9792E4;
+    padding: 50px 0;
+}
+
+.get-started .col {
+    width: 100%;
+}
+
+.get-started .content-text {
+    padding: 20px;
+    background-color: white;
+}
+
+/*----------
+   FOOTER
+ ----------*/
+footer {
+    padding: 50px 0;
+    background-color: #333333;
+}
+
+footer .col {
+    width: 100%;
+}
+
+footer .content-text {
+    padding: 20px;
+    background-color: white;
+}
+
 
 /*----------
  RESPONSIVE
@@ -182,6 +239,15 @@ header {
     .why-us .col {
         margin: 0 10px;
         width: calc(50% - 20px);
+    }
+
+    /* ABOUT US */
+    .about-us .row {
+        flex-direction: row;
+    }
+
+    .about-us .col {
+        width: 50%;
     }
 }
 
