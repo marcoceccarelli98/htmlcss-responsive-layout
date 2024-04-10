@@ -212,6 +212,39 @@ header {
     background-color: var(--secondary-color);
 }
 
+.testimonial1 {
+    background-image: url("../img/testimonial1.jpg");
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+.testimonial2 {
+    background-image: url("../img/testimonial2.jpg");
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+.testimonial3 {
+    background-image: url("../img/testimonial3.jpg");
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
 .partners .content-text {
     margin: 0 auto;
     text-align: center;
@@ -315,18 +348,38 @@ header {
     flex-direction: column;
 }
 
-.about-us .col {
+.about-us .col-left,
+.about-us .col-right {
     width: 100%;
 }
 
-.about-us .content-text {
-    width: 100%;
-    background-color: red;
+.about-us h2 {
+    font-size: 50px;
+    color: var(--secondary-color);
 }
 
-.about-us .content-img {
-    width: 100%;
-    background-color: green;
+.about-us p {
+    padding: 30px 0;
+    line-height: 40px;
+}
+
+.about-us h4 {
+    font-size: 30px;
+    color: var(--secondary-color);
+    padding: 40px 0;
+}
+
+.about-us .content-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.about-us .content-img i {
+    position: absolute;
+    left: 110px;
+    font-size: 50px;
+    color: var(--secondary-color);
 }
 
 /* GET STARTED */
@@ -340,9 +393,15 @@ header {
 }
 
 .get-started .content-text {
+    text-align: center;
     padding: 20px;
-    background-color: white;
 }
+
+.get-started h6 {}
+
+.get-started h5 {}
+
+.get-started h4 {}
 
 /*----------
    FOOTER
@@ -434,8 +493,24 @@ footer .content-text {
         flex-direction: row;
     }
 
-    .about-us .col {
-        width: 50%;
+    .about-us .col-left {
+        width: 60%;
+        margin-right: 30px;
+    }
+
+    .about-us .col-right {
+        width: 40%;
+        margin-left: 30px;
+    }
+
+    .about-us .content-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-us .content-img i {
+        left: 180px;
+        font-size: 80px;
     }
 }
 
