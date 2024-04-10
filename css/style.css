@@ -10,9 +10,9 @@
 /*----------
    COMMON 
  ----------*/
-header .debug::after {
-    content: 'Mobile';
-    position: relative;
+.debug header::after {
+    content: 'MOBILE';
+    position: fixed;
     bottom: 0;
     right: 0;
     padding: 20px;
@@ -20,16 +20,29 @@ header .debug::after {
     color: white;
 }
 
+main {
+    margin-top: 100px;
+}
 
 /*----------
    HEADER 
  ----------*/
 header {
-    padding: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     background-color: #0084FD;
 }
 
 .logo {
+    padding: 20px;
+    background-color: aqua;
+}
+
+.menu {
+    padding: 20px;
     background-color: aqua;
 }
 
@@ -211,7 +224,20 @@ footer .content-text {
  RESPONSIVE
  ----------*/
 /*--- TABLET ---*/
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+
+    /* DEBUG */
+    .debug header::after {
+        content: 'TABLET';
+    }
+
+    /*----------
+       LAYOUT 
+    ----------*/
+    .container {
+        max-width: 720px;
+    }
+
     /*----------
         MAIN
     ----------*/
@@ -223,9 +249,8 @@ footer .content-text {
     }
 
     .application .row {
-        margin-top: 50px;
         margin-left: -15px;
-        margin-left: -15px;
+        margin-right: -15px;
     }
 
     .application .col {
@@ -240,7 +265,7 @@ footer .content-text {
 
     .application .content {
         height: 300px;
-        margin: 0 10px 30px 10px;
+        /* margin: 0 10px 30px 10px; */
     }
 
     .application .content-big {
@@ -256,6 +281,11 @@ footer .content-text {
     }
 
     /* WHY US */
+    .why-us .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
     .why-us .col {
         margin: 0 10px;
         width: calc(50% - 20px);
@@ -272,13 +302,18 @@ footer .content-text {
 }
 
 /*--- DESKTOP ---*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
+
+    /* DEBUG */
+    .debug header::after {
+        content: 'DESKTOP';
+    }
 
     /*----------
        LAYOUT 
     ----------*/
     .container {
-        max-width: 720px;
+        max-width: 960px;
     }
 
     /*----------
@@ -343,6 +378,11 @@ footer .content-text {
 
 /*--- DESKTOP XL ---*/
 @media screen and (min-width: 1200px) {
+
+    /* DEBUG */
+    .debug header::after {
+        content: 'DESKTOP XL';
+    }
 
     /*----------
        LAYOUT 
