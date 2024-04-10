@@ -20,6 +20,10 @@
     color: white;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 main {
     margin-top: 100px;
 }
@@ -36,19 +40,32 @@ header {
     background-color: #0084FD;
 }
 
-.logo {
-    padding: 20px;
-    background-color: aqua;
+/* MENU */
+.menu .only-mobile {
+    filter: invert(100%);
+    font-size: 2rem;
 }
 
-.menu {
-    padding: 20px;
-    background-color: aqua;
+.logo {}
+
+.menu .only-desktop ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu .only-desktop li {
+    padding-left: 20px;
+}
+
+.menu .only-desktop a {
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
+    padding: 1.5rem 0;
     /* padding: 0 2rem; */
 }
 

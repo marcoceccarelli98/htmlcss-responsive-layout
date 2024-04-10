@@ -29,6 +29,10 @@
     vertical-align: middle;
 }
 
+.radius-20px {
+    border-radius: 20px;
+}
+
 /* POSITION */
 
 .relative {
@@ -61,19 +65,23 @@
 }
 
 .py-10 {
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .py-40 {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .px-10 {
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .px-40 {
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .padding-right-5px {
@@ -147,6 +155,10 @@
 
 /* TEXT COLOR */
 
+.black {
+    color: black;
+}
+
 .white {
     color: white;
 }
@@ -157,6 +169,10 @@
 
 
 /* BACKGROUNDS */
+.bg-white {
+    background-color: white;
+}
+
 .bg-red {
     background-color: red;
 }
