@@ -10,6 +10,12 @@
 /*----------
    COMMON 
  ----------*/
+:root {
+    --primary-color: #2495FD;
+    --primary-light-color: #B5DDFF;
+    --secondary-color: #9792E4;
+}
+
 .debug header::after {
     content: 'MOBILE';
     position: fixed;
@@ -37,7 +43,7 @@ header {
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: #0084FD;
+    background-color: var(--primary-color);
 }
 
 /* MENU */
@@ -66,7 +72,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 0;
-    /* padding: 0 2rem; */
 }
 
 .only-desktop {
@@ -80,35 +85,33 @@ header {
 /* APPLICATION */
 .application .col {
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .application .content {
-    height: 400px;
-    background-color: #B5DDFF;
+    height: 100%;
+    background-color: var(--primary-light-color);
     padding-top: 20px;
     margin-bottom: 20px;
 }
 
 .application .content-big {
-    height: 800px;
-    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
 .application .content-text {
-    height: 60%;
-    width: 100%;
-    background-color: red;
+    padding: 20px 30px;
 }
 
-.application .content-img {
-    height: 30%;
+.application .content-img img {
     width: 100%;
-    background-color: green;
+    margin-bottom: -24px;
 }
 
 /* PLANNING */
 .planning {
-    background-color: #9792E4;
+    background-color: var(--secondary-color);
     padding: 50px 0;
 }
 
@@ -118,18 +121,6 @@ header {
 
 .planning .content-right {
     background-color: white;
-}
-
-.planning .content-text {
-    height: 300px;
-    width: 100%;
-    background-color: red;
-}
-
-.planning .content-img {
-    height: 300px;
-    width: 100%;
-    background-color: green;
 }
 
 .planning .content-right {
@@ -147,17 +138,15 @@ header {
     flex-direction: column;
     margin: 10px 0;
     padding: 20px;
-    background-color: #9792E4;
+    background-color: var(--secondary-color);
 }
 
 .partners .content-text {
-    height: 300px;
     width: 100%;
     background-color: red;
 }
 
 .partners .content-img {
-    height: 300px;
     width: 100%;
     background-color: green;
 }
@@ -165,7 +154,7 @@ header {
 /* WHY US */
 .why-us {
     padding: 50px 0;
-    background-color: #9792E4;
+    background-color: var(--secondary-color);
 }
 
 .why-us .col {
@@ -173,7 +162,6 @@ header {
 }
 
 .why-us .content {
-    height: 400px;
     width: 100%;
     background-color: white;
     margin-bottom: 20px;
@@ -193,20 +181,18 @@ header {
 }
 
 .about-us .content-text {
-    height: 300px;
     width: 100%;
     background-color: red;
 }
 
 .about-us .content-img {
-    height: 100px;
     width: 100%;
     background-color: green;
 }
 
 /* GET STARTED */
 .get-started {
-    background-color: #9792E4;
+    background-color: var(--secondary-color);
     padding: 50px 0;
 }
 
@@ -281,12 +267,10 @@ footer .content-text {
     }
 
     .application .content {
-        height: 300px;
         /* margin: 0 10px 30px 10px; */
     }
 
     .application .content-big {
-        height: 300px;
         margin-top: 0px;
     }
 
@@ -355,7 +339,7 @@ footer .content-text {
     }
 
     .application .content-big {
-        display: flex;
+        flex-direction: row;
     }
 
     .application .content-left,
@@ -364,18 +348,14 @@ footer .content-text {
     }
 
     .application .content-text {
-        height: 60%;
         margin: 0 auto;
     }
 
     .application .content-img {
-        height: 30%;
         margin: 0 auto;
     }
 
-    .application .content-img:last-child {
-        background-color: violet;
-    }
+    .application .content-img:last-child {}
 
     /* PLANNING */
     .planning .row {
