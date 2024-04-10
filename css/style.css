@@ -39,6 +39,10 @@ h2 {
     color: var(--title-color);
 }
 
+p {
+    font-weight: 600;
+}
+
 /*----------
    HEADER 
  ----------*/
@@ -125,7 +129,6 @@ header {
     font-size: 1rem;
     line-height: 30px;
     padding-top: 30px;
-    font-weight: 600;
 }
 
 .application .content-big .content-text h2 {
@@ -158,13 +161,41 @@ header {
     flex-direction: column;
 }
 
-.planning .content-right {
-    background-color: white;
+.planning img {
+    padding: 20px 0;
+    width: 100%;
+}
+
+.planning h2 {
+    color: white;
+    font-size: 30px;
+    padding: 50px 0;
+}
+
+.planning p {
+    color: white;
+    line-height: 30px;
+    font-weight: 100;
 }
 
 .planning .content-right {
     padding: 20px;
     margin-top: 20px;
+    background-color: white;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.planning .content-right p {
+    padding: 20px 0;
+}
+
+.planning .content-right .content-text i {
+    border-radius: 50%;
+    background-color: #9792E4;
+    font-size: 20px;
+    padding: 20px 22px;
+    margin: 20px 0;
 }
 
 /* PARTNERS */
@@ -172,28 +203,74 @@ header {
     padding: 50px 0;
 }
 
+.partners .col {
+    width: 100%;
+}
+
 .partners .content {
     display: flex;
     flex-direction: column;
+    border-radius: 50px;
     margin: 10px 0;
     padding: 20px;
     background-color: var(--secondary-color);
 }
 
 .partners .content-text {
+    margin: 0 auto;
+    text-align: center;
     width: 100%;
-    background-color: red;
+}
+
+.partners .content-text h4 {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.partners .content-text h3 {
+    padding: 30px 0;
+    font-size: 35px;
+    color: var(--secondary-color);
+}
+
+.partners .content-text p {
+    line-height: 40px;
+    font-weight: 100;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.partners .content .content-text p {
+    color: white;
+}
+
+.partners .content .content-text .name {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 0;
 }
 
 .partners .content-img {
     width: 100%;
-    background-color: green;
+}
+
+.partners .content-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 /* WHY US */
 .why-us {
     padding: 50px 0;
     background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.why-us h3 {
+    color: white;
+    font-size: 35px;
+    padding-bottom: 50px;
 }
 
 .why-us .col {
@@ -203,7 +280,9 @@ header {
 .why-us .content {
     width: 100%;
     background-color: white;
+    color: var(--secondary-color);
     margin-bottom: 20px;
+    text-align: left;
 }
 
 /* ABOUT US */
@@ -310,6 +389,14 @@ footer .content-text {
         flex-direction: row;
     }
 
+    .partners .content .content-img {
+        width: 25%;
+    }
+
+    .partners .content .content-text {
+        width: 75%;
+    }
+
     /* WHY US */
     .why-us .row {
         margin-left: -10px;
@@ -392,7 +479,18 @@ footer .content-text {
     }
 
     .planning .col {
+        width: 50%;
+        height: 100%;
         margin: 0 20px;
+    }
+
+    .planning .col {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .planning .content-right img {
+        width: 50%;
     }
 
     /* WHY US */

@@ -160,6 +160,11 @@
     height: 700px;
 }
 
+/* FONT SIZE */
+.f-size-30 {
+    font-size: 30px;
+}
+
 /* TEXT DECORATION*/
 .no-deco {
     text-decoration: none;
