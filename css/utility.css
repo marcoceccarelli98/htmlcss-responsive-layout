@@ -29,9 +29,11 @@
     vertical-align: middle;
 }
 
+/* RADIUS */
 .radius-20px {
     border-radius: 20px;
 }
+
 
 /* POSITION */
 
@@ -82,6 +84,11 @@
 .px-40 {
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.px-50 {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .padding-right-5px {
@@ -153,6 +160,11 @@
     height: 700px;
 }
 
+/* TEXT DECORATION*/
+.no-deco {
+    text-decoration: none;
+}
+
 /* TEXT COLOR */
 
 .black {
@@ -161,6 +173,10 @@
 
 .white {
     color: white;
+}
+
+.blue {
+    color: #0084FD;
 }
 
 .lilac {
@@ -194,7 +210,7 @@
 }
 
 .bg-blue {
-    background-color: cornflowerblue;
+    background-color: #0084FD;
 }
 
 .bg-darkblue {

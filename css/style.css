@@ -14,6 +14,7 @@
     --primary-color: #2495FD;
     --primary-light-color: #B5DDFF;
     --secondary-color: #9792E4;
+    --title-color: #0084FD;
 }
 
 .debug header::after {
@@ -32,6 +33,10 @@ body {
 
 main {
     margin-top: 100px;
+}
+
+h2 {
+    color: var(--title-color);
 }
 
 /*----------
@@ -83,6 +88,10 @@ header {
  ----------*/
 
 /* APPLICATION */
+.application {
+    margin-top: 150px;
+}
+
 .application .col {
     width: 100%;
     margin-bottom: 30px;
@@ -93,20 +102,50 @@ header {
     background-color: var(--primary-light-color);
     padding-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
+    border-radius: 20px;
 }
 
 .application .content-big {
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .application .content-text {
     padding: 20px 30px;
 }
 
+.application .content-text h2 {
+    font-size: 1.8rem;
+}
+
+.application .content-text p {
+    color: grey;
+    font-size: 1rem;
+    line-height: 30px;
+    padding-top: 30px;
+    font-weight: 600;
+}
+
+.application .content-big .content-text h2 {
+    text-align: left;
+}
+
+.application .content-big .content-text p {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
 .application .content-img img {
-    width: 100%;
+    width: 80%;
     margin-bottom: -24px;
+    margin-top: 30px;
+}
+
+.application .icon {
+    font-size: 90px;
+    padding-top: 10px;
 }
 
 /* PLANNING */
@@ -222,7 +261,6 @@ footer .content-text {
     background-color: white;
 }
 
-
 /*----------
  RESPONSIVE
  ----------*/
@@ -246,11 +284,6 @@ footer .content-text {
     ----------*/
 
     /* APPLICATION */
-
-    .application {
-        margin-top: 50px;
-    }
-
     .application .row {
         margin-left: -15px;
         margin-right: -15px;
@@ -264,10 +297,6 @@ footer .content-text {
 
     .application .col:first-child {
         width: calc(100%/3*2 - 30px);
-    }
-
-    .application .content {
-        /* margin: 0 10px 30px 10px; */
     }
 
     .application .content-big {
@@ -334,10 +363,6 @@ footer .content-text {
 
     /* APPLICATION */
 
-    .application {
-        margin-top: 50px;
-    }
-
     .application .content-big {
         flex-direction: row;
     }
@@ -353,6 +378,10 @@ footer .content-text {
 
     .application .content-img {
         margin: 0 auto;
+    }
+
+    .application .content-img img {
+        min-width: 320px;
     }
 
     .application .content-img:last-child {}
