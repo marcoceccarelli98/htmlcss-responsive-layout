@@ -39,10 +39,6 @@ h2 {
     color: var(--title-color);
 }
 
-p {
-    font-weight: 600;
-}
-
 /*----------
    HEADER 
  ----------*/
@@ -278,11 +274,36 @@ header {
 }
 
 .why-us .content {
+    border-radius: 20px;
     width: 100%;
     background-color: white;
-    color: var(--secondary-color);
     margin-bottom: 20px;
     text-align: left;
+    padding: 30px;
+}
+
+.why-us .content h2 {
+    font-size: 50px;
+    color: var(--secondary-color);
+}
+
+.why-us .content h3 {
+    font-size: 20px;
+    color: var(--secondary-color);
+    padding: 20px 0;
+}
+
+.why-us .content p {
+    color: grey;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.why-us .content a {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 /* ABOUT US */
