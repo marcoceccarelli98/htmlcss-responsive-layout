@@ -384,6 +384,7 @@ header {
 
 /* GET STARTED */
 .get-started {
+    color: white;
     background-color: var(--secondary-color);
     padding: 50px 0;
 }
@@ -397,16 +398,43 @@ header {
     padding: 20px;
 }
 
-.get-started h6 {}
+.get-started h6 {
+    font-weight: 100;
+    font-size: 20px;
+    color: lightgray;
+    padding-bottom: 30px;
+}
 
-.get-started h5 {}
+.get-started h5 {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
 
-.get-started h4 {}
+.get-started h4 {
+    font-size: 70px;
+    color: #FDC15F;
+}
+
+.get-started p {
+    line-height: 30px;
+    padding: 40px 0;
+}
+
+.get-started .btn {
+    color: var(--secondary-color);
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.get-started a {
+    color: white;
+}
 
 /*----------
    FOOTER
  ----------*/
 footer {
+    text-align: center;
     padding: 50px 0;
     background-color: #333333;
 }
@@ -415,9 +443,13 @@ footer .col {
     width: 100%;
 }
 
-footer .content-text {
-    padding: 20px;
-    background-color: white;
+footer p {
+    color: white;
+    padding: 30px 0;
+}
+
+footer a {
+    color: var(--secondary-color);
 }
 
 /*----------
