@@ -10,7 +10,15 @@
 /*----------
    COMMON 
  ----------*/
-
+header .debug::after {
+    content: 'Mobile';
+    position: relative;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
 
 
 /*----------
@@ -21,10 +29,14 @@ header {
     background-color: #0084FD;
 }
 
+.logo {
+    background-color: aqua;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 }
 
 .only-desktop {
@@ -210,12 +222,20 @@ footer .content-text {
         margin-top: 50px;
     }
 
+    .application .row {
+        margin-top: 50px;
+        margin-left: -15px;
+        margin-left: -15px;
+    }
+
     .application .col {
-        width: calc(100%/3);
+        width: calc(100%/3 - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .application .col:first-child {
-        width: calc(100%/3*2);
+        width: calc(100%/3*2 - 30px);
     }
 
     .application .content {
@@ -258,7 +278,7 @@ footer .content-text {
        LAYOUT 
     ----------*/
     .container {
-        width: 70vw;
+        max-width: 720px;
     }
 
     /*----------
@@ -319,4 +339,16 @@ footer .content-text {
         margin: 0 10px;
         width: calc(100%/3 - 20px);
     }
+}
+
+/*--- DESKTOP XL ---*/
+@media screen and (min-width: 1200px) {
+
+    /*----------
+       LAYOUT 
+    ----------*/
+    .container {
+        max-width: 1140px;
+    }
+
 }
